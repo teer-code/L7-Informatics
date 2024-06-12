@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ice Cream Parlor</title>
+</head>
+<body>
+    <h1>Seasonal Flavors</h1>
+    <ul>
+        {% for flavor in flavors %}
+            <li>{{ flavor[1] }} - {{ flavor[2] }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/search">Search Flavors</a>
+    <a href="/add_allergen">Add Allergen</a>
+    <a href="/cart">My Cart</a>
+</body>
+</html>
